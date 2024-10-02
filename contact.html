@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="layout.css">
+ 
+</head>
+
+<body>
+<div id="cursor-btn"></div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="#">Rahi <span> coader</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+          <li class="nav-item nav1" >
+            <a class="nav-link " aria-current="page" href="boot.html">Home</a>
+          </li>
+          <li class="nav-item nav1">
+            <a class="nav-link" href="about.html">about</a>
+          </li>
+          <li class="nav-item dropdown nav1">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Topics
+            </a>
+            <ul class="dropdown-menu nav1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item nav1" href="#">Personal contact</a></li>
+            </ul>
+          </li>
+          <li class="nav-item nav1">
+            <a class="nav-link " aria-current="page" href="#">contact</a>
+          </li>
+        </ul>
+      
+        <div id="cursor"> </div>
+     
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger" type="submit">Search</button>
+        </form>
+        <div class="mx-2 ">
+           <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#loginModal" > login</button>
+           <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">sign in</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+ 
+<!-- login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <fieldset disabled>
+            <legend>Disabled fieldset example</legend>
+            <div class="mb-3">
+              <label for="disabledTextInput" class="form-label">Disabled input</label>
+              <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+            </div>
+            <div class="mb-3">
+              <label for="disabledSelect" class="form-label">Disabled select menu</label>
+              <select id="disabledSelect" class="form-select">
+                <option>Disabled select</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+                <label class="form-check-label" for="disabledFieldsetCheck">
+                  Can't check this
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- Button trigger modal -->
+
+<!-- sign in modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+ <div class="container my-5">
+<h1>contact <span> Us</span></h1>
+<form class="row g-3">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label"><h3>Email</h3></label>
+      <input type="email" placeholder="enter valid email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label"><h3>Password</h3></label>
+      <input type="password" placeholder="password" class="form-control" id="inputPassword4">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label"><h3>confirsm password</h3></label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="enter password">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress2" class="form-label"><h3>Address 2</h3></label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label"><h3>City</h3></label>
+      <input type="text"placeholder="enter city" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label"><h3>State</h3></label>
+      <select id="inputState" class="form-select">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label"><h1>Zip</h1></label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+       
+        <label class="form-check-label" for="gridCheck">
+          <h1>Check me out</h1>
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+
+
+ </div>
+ <footer class="container">
+  <p class="float-end"><a href="#">Back to top</a></p>
+  <p>© 2020–2024 rahi coader, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+</footer>
+
+  <script src="script.js"></script>
+  
+</body>
+
+</html>
