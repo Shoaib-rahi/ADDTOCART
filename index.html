@@ -2,275 +2,727 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->
-  <link rel="stylesheet" href="layout.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
 </head>
 
-<body onload="myfunction()">
-  <div id="preloader"></div>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand logo" href="#">Rahi <span> coader</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
-          <li class="nav-item nav1" >
-            <a class="nav-link " aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item nav1">
-            <a class="nav-link" href="about.html">about</a>
-          </li>
-          <li class="nav-item dropdown nav1">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Topics
+<section>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-color py-5 py-lg-5">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h3 class=" white-color">{ Shoaib Rahi/}</h3>
             </a>
-            <ul class="dropdown-menu nav1">
-              <li><a class="dropdown-item" href="#" >Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item nav1" href="#">Personal contact</a></li>
-            </ul>
-          </li>
-          <li class="nav-item nav1">
-            <a class="nav-link " aria-current="page" href="contact.html">contact</a>
-          </li>
-        </ul>
-        <div id="cursor"> </div>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-danger" type="submit">Search</button>
-        </form>
-        <div class="mx-2 ">
-           <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#loginModal" > login</button>
-           <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">sign in</button>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <!-- Button trigger modal -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home-section">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-section">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#online-section">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#contact">Contact</a>
+                    </li>
 
 
-<!-- login Modal -->
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <fieldset disabled>
-            <legend>Disabled fieldset example</legend>
-            <div class="mb-3">
-              <label for="disabledTextInput" class="form-label">Disabled input</label>
-              <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                </ul>
+
             </div>
-            <div class="mb-3">
-              <label for="disabledSelect" class="form-label">Disabled select menu</label>
-              <select id="disabledSelect" class="form-select">
-                <option>Disabled select</option>
-              </select>
+        </div>
+    </nav>
+
+    <!-- navbar end -->
+
+
+    <!-- hero section start -->
+
+    <section class="bg-main bg-color hero-section" id="home-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="mt-0 mt-lg-0 text-lg-start order-lg-0 order-1 col-12 col-md-12 col-sm-6 col-lg-6 d-flex flex-column justify-content-center align-items-start content-section">
+                    <h1 class="text-white">We Collect high quality leads</h1>
+                    <p class="mt-3 mb-5 para-width text-gray para-width">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolore similique eius vel quam, porro,
+                        impedit labore distinctio nihil amet </p>
+
+                    <div class="text-center  w-100 text-md-start">
+                        <button data-bs-toggle="tooltip" data-bs-title="Get Into Touch"
+                            class="btn btn-primary px-5 py-2">Contact Us</button>
+                    </div>
+                </div>
+                <!-- hero img -->
+                <div class="col-12  col-md-12 col-lg-6 order-lg-1 order-0">
+                    <div class="text-center text-lg-end">
+                        <img src="images/image1.gif" class="hero-img" alt="">
+                    </div>
+                </div>
+
             </div>
-            <div class="mb-3">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-                <label class="form-check-label" for="disabledFieldsetCheck">
-                  Can't check this
-                </label>
-              </div>
+        </div>
+        <div class="custom-shape-divider-bottom-1727762130">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- hero section end -->
+
+    <!-- service section start -->
+    <section class="service-section">
+        <div class="container text-center fw-bold common-title">
+            <h2 class="common-heading">What We Will Do For <br> Your Website</h2>
+            <hr class="w-25 mx-auto">
+        </div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-md-12">
+                    <div class="text-center p-2 card-box rounded-2">
+                        <img src="images/image2.gif" alt="link" width="200" class="img-fluid">
+                        <h4 class="fw-normal py-2 ">Link Building</h4>
+                        <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit exercitationem
+                            deserunt deleniti, corporis dolores voluptates?</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a href="#services"
+                                class="icon-span rounded-circle d-flex justify-content-center align-items-center "><i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-4 col-md-12">
+                    <div class="text-center py-2 card-box rounded-2 shadow">
+                        <img src="images/image3.gif" alt="link" width="200" class="img-fluid">
+                        <h4 class="fw-normal py-2 ">Content Markiting</h4>
+                        <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit exercitationem
+                            deserunt deleniti, corporis dolores voluptates?</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a href="#services"
+                                class="icon-span rounded-circle d-flex justify-content-center align-items-center "><i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-4 col-md-12">
+                    <div class="text-center p-2 card-box rounded-2">
+                        <img src="images/image5.gif" alt="link" width="200" class="img-fluid">
+                        <h4 class="fw-normal py-2 ">On Page SEO</h4>
+                        <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit exercitationem
+                            deserunt deleniti, corporis dolores voluptates?</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a href="#services"
+                                class="icon-span rounded-circle d-flex justify-content-center align-items-center "><i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </fieldset>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
- <!-- Button trigger modal -->
+        </div>
+    </section>
 
-<!-- sign in modal -->
-<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
- 
-<!-- slider star -->
-<div id="carouselExampleCaptions" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/comp2.jpeg" class="d-block w-100" alt="...">
-      <div class="carousel-caption  d-md-block">
-        <h2>welcome to rahi coader</h2>
-        <p>technology ,development and trends</p>
-        <button class="btn btn-danger">welcome</button>
-        <button class="btn btn-primary">web development</button>
-        <button class="btn btn-success">code funs</button>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="images/comp1.jpeg" class="d-block w-100" alt="...">
-      <div class="carousel-caption  d-md-block">
-        <h2>welcome to rahi coader</h2>
-        <p>technology ,development and trends</p>
-        <button class="btn btn-danger">welcome</button>
-        <button class="btn btn-primary">web development</button>
-        <button class="btn btn-success">code funs</button>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="images/comp2.jpeg" class="d-block w-100" alt="...">
-      <div class="carousel-caption  d-md-block">
-        <h2>welcome to rahi coader</h2>
-        <p>technology ,development and trends</p>
-        <button class="btn btn-danger">welcome</button>
-        <button class="btn btn-primary">web development</button>
-        <button class="btn btn-success">code funs</button>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-<!-- slider ending -->
+    <!-- service section end -->
+    <!-- digital products showcase start -->
+
+    <section class=" bg-color more-info-section ">
+        <div class="container">
+            <div class="row">
+
+                <!-- hero img -->
+                <div class="col-12  col-md-12 col-sm-6 col-lg-6 img-section">
+
+                    <figure>
+                        <img src="images/image6.gif" alt="imgaes" width="500" class="img-fluid img">
+                    </figure>
+
+                </div>
+
+
+                <div
+                    class="col-12 col-md-12 col-sm-6 col-lg-6 d-flex flex-column justify-content-center align-items-start">
+                    <h2 class="text-white">steps to build a <br>successfull digital project</h2>
+                    <p class="mt-3 mb-5 para-width text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolore similique eius vel quam, porro,
+                        impedit labore distinctio nihil amet Dolore similique eius vel quam, porro,
+                        impedit labore distinctio nihil amet </p>
+
+                    <div class="text-center  w-100 text-md-start">
+                        <button data-bs-toggle="tooltip" data-bs-title="Get Into Touch"
+                            class="btn btn-primary px-5 py-2">Contact Us</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+    <!-- digital products showcase end -->
 
 
 
+    <!-- online section mode -->
+    <section class="common-section buisness-section" id="online-section">
+        <div class="container text-center fw-bold common-title">
+            <h2 class="common-heading">Generating New Coutomers via <br>Online Mode</h2>
+            <hr class="w-25 mx-auto">
+        </div>
 
-<!-- card start -->
- <div class="container my-5">
-  <div class="row mb-2">
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary-emphasis">Wordpress</strong>
-          <h3 class="mb-0">Rahi <span>coading  section</span></h3>
-          <div class="mb-1 text-body-secondary">Nov 12</div>
-          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-            Continue reading
-            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-          </a>
+
+
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-12 col-lg-6 col-md-12">
+
+                    <div class="px-3 d-flex py-5 shadow">
+                        <img src="images/image6.gif" class="d-md-block d-none img-fluid mx-3" width="150px" alt="">
+
+
+
+                        <div>
+                            <p class="mb-3 fw-bolder">
+                            <h3>Social Media Advatiesing</h3>
+                            </p>
+                            <p>reach a wider audience create engage by ads Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Mollitia, nesciunt! Lorem ipsum dolor sit, amet consectetur
+                                adipisicing
+                                elit. Labore, dolor possimus veniam, eveniet officia excepturi dignissimos minus eius
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-12">
+
+                    <div class="px-3 d-flex py-5 shadow">
+                        <img src="images/image1.gif" class="d-md-block d-none img-fluid mx-3" width="150px" alt="">
+
+
+
+                        <div>
+                            <p class="mb-3 fw-bolder">
+                            <h3>Influence Markitng</h3>
+                            </p>
+                            <p>reach a wider audience create engage by ads Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Mollitia, nesciunt! Lorem ipsum dolor sit, amet consectetur
+                                adipisicing
+                                elit. Labore, dolor possimus veniam, eveniet officia excepturi dignissimos minus eius
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-12">
+
+                    <div class="px-3 d-flex py-5 shadow">
+                        <img src="images/image2.gif" class="d-md-block d-none img-fluid mx-3" width="150px" alt="">
+
+
+
+                        <div>
+                            <p class="mb-3 fw-bolder">
+                            <h3>Content Markting</h3>
+                            </p>
+                            <p>reach a wider audience create engage by ads Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Mollitia, nesciunt! Lorem ipsum dolor sit, amet consectetur
+                                adipisicing
+                                elit. Labore, dolor possimus veniam, eveniet officia excepturi dignissimos minus eius
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-12">
+
+                    <div class="px-3 d-flex py-5 shadow">
+                        <img src="images/image8.gif" class="d-md-block d-none img-fluid mx-3" width="150px" alt="">
+
+
+
+                        <div>
+                            <p class="mb-3 fw-bolder">
+                            <h3>Advertising Your products</h3>
+                            </p>
+                            <p>reach a wider audience create engage by ads Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Mollitia, nesciunt! Lorem ipsum dolor sit, amet consectetur
+                                adipisicing
+                                elit. Labore, dolor possimus veniam, eveniet officia excepturi dignissimos minus eius
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-auto d-none d-lg-block">
-          <img src="images/boot1.jpeg" alt="" class="bd-placeholder-img" width="200" height="250">
+    </section>
+    <!-- online section mode ends -->
+
+
+
+
+
+    <!-- testimonial section -->
+
+    <section class="common-section mb-5 pt-5 bg-color " id="about-section">
+        <div class="container text-center fw-bold common-title">
+            <h2 class="common-heading text-white">What Client Say <br>About Us</h2>
+            <hr class="w-25 mx-auto">
         </div>
-      </div>
+
+
+
+        <!-- carousal -->
+
+        <div id="carouselExampleIndicators" class="carousel slide mx-3" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner ">
+                <div class="carousel-item active d-flex">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-4 px-5">
+                                <div class="justify-content-center align-items-center">
+                                    <div class="card p-3 mx-5" style="width: 18rem;">
+                                        <img src="images/boys.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title mb-3">Rahi,s sharthak</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up the bulk of the card's content.</p>
+                                            <div class="mt-3">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-lg-4 px-5">
+                                <div class="card p-3 mx-5" style="width: 18rem;">
+                                    <img src="images/boys.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-3">Rahi,s sharthak</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <div class="mt-3">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 px-5">
+                                <div class="card p-3 mx-5" style="width: 18rem;">
+                                    <img src="images/boys.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-3">Rahi,s sharthak</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <div class="mt-3">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-12 col-lg-4 px-5">
+                                <div class="justify-content-center align-items-center">
+                                    <div class="card p-3 mx-5" style="width: 18rem;">
+                                        <img src="images/boys.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title mb-3">Rahi,s sharthak</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up the bulk of the card's content.</p>
+                                            <div class="mt-3">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-lg-4 px-5">
+                                <div class="card p-3 mx-5" style="width: 18rem;">
+                                    <img src="images/boys.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-3">Rahi,s sharthak</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <div class="mt-3">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 px-5">
+                                <div class="card p-3 mx-5" style="width: 18rem;">
+                                    <img src="images/boys.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-3">Rahi,s sharthak</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <div class="mt-3">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-12 col-lg-4 px-5">
+                                <div class="justify-content-center align-items-center">
+                                    <div class="card p-3 mx-5" style="width: 18rem;">
+                                        <img src="images/boys.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title mb-3">Rahi,s sharthak</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up the bulk of the card's content.</p>
+                                            <div class="mt-3">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-lg-4 px-5">
+                                <div class="card p-3 mx-5" style="width: 18rem;">
+                                    <img src="images/boys.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-3">Rahi,s sharthak</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <div class="mt-3">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 px-5">
+                                <div class="card p-3 mx-5" style="width: 18rem;">
+                                    <img src="images/boys.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-3">Rahi,s sharthak</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <div class="mt-3">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+        <!-- carousal ends -->
+
+
+
+    </section>
+    <!-- testimonial section ends -->
+
+
+
+    <!-- extra sevices -->
+
+    <section class="common-section buisness-section" id="online-section">
+        <div class="container text-center fw-bold common-title">
+            <h2 class="common-heading">Tips and Tricks From <br>Our Experts</h2>
+            <hr class="w-25 mx-auto">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="clo-12 col-md-6 col-lg-4">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="card shadow" style="width: 18rem;">
+                            <img src="images/boys1.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between m-3">
+                                    <p class="small text-gray"><i class="fa-solid fa-book-open-reader"></i> : 5000</p>
+                                    <p class="small text-gray">March , 2024</p>
+                                </div>
+                                <h4 class="card-title m-2">Card title</h4>
+                                <p class="card-text m-2">Some quick example text to build on the card title and make up
+                                    the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-dark mt-2">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="clo-12 col-md-6 col-lg-4">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="card shadow" style="width: 18rem;">
+                            <img src="images/boys1.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between m-3">
+                                    <p class="small text-gray"><i class="fa-solid fa-book-open-reader"></i> : 5000</p>
+                                    <p class="small text-gray">March , 2024</p>
+                                </div>
+                                <h4 class="card-title m-2">Card title</h4>
+                                <p class="card-text m-2">Some quick example text to build on the card title and make up
+                                    the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-dark mt-2">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="clo-12 col-md-6 col-lg-4">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="card shadow" style="width: 18rem;">
+                            <img src="images/boys1.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between m-3">
+                                    <p class="small text-gray"><i class="fa-solid fa-book-open-reader"></i> : 5000</p>
+                                    <p class="small text-gray">March , 2024</p>
+                                </div>
+                                <h4 class="card-title m-2">Card title</h4>
+                                <p class="card-text m-2">Some quick example text to build on the card title and make up
+                                    the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-dark mt-2">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- extra sevices  ends-->
+
+
+    <!-- contacts section start -->
+
+    <section class="common-section contact-section mb-5 text-white bg-color pt-5" id="contact">
+        <div class="custom-shape-divider-top-1727880297">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div class="container text-center fw-bold common-title">
+            <h2 class="common-heading text-white">Contact Us</h2>
+            <hr class="w-25 mx-auto">
+        </div>
+
+        <div class="container">
+            <div class="form-container">
+                <div class="mb-3 form-section">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3 form-section">
+                    <label for="exampleFormControlInput1" class="form-label">Username</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="enter you name">
+                </div>
+                <div class="mb-3 form-section">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <button class="btn-primary btn mt-5" onclick="submited()">Submite</button>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- contacts section end -->
+
+    <!-- footer section start -->
+
+    <div class="footer-section bg-color">
+        <div class="container">
+         
+            <div class="row ">
+                <div class=" mb-5 common-img bg-color1">
+                    <img src="images/image9.gif" width="200px" alt="">
+                    <img src="images/image10.gif" width="200px" alt="">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                  
+                    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+                        <div class="row">
+                            <div class="col-12 col-md ">
+                                <i class="fa-solid fa-user text-white"></i>
+                                <small class="d-block mb-3 text-muted">© 2017–2021</small>
+                            </div>
+                            <div class="col-6 col-md">
+                                <h5 class="text-white">Features</h5>
+                                <ul class="list-unstyled text-small">
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool
+                                            stuff</a></li>
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random
+                                            feature</a></li>
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team
+                                            feature</a></li>
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for
+                                            developers</a></li>
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another
+                                            one</a></li>
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last
+                                            time</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md">
+                                <h5 class="text-white">Resources</h5>
+                                <ul class="list-unstyled text-small">
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none"
+                                            href="#">Resource</a></li>
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource
+                                            name</a></li>
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another
+                                            resource</a></li>
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final
+                                            resource</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md">
+                                <h5 class="text-white">About</h5>
+                                <ul class="list-unstyled text-small">
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a>
+                                    </li>
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none"
+                                            href="#">Locations</a></li>
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a>
+                                    </li>
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md">
+                                <h5 class="text-white">Contact</h5>
+                                <ul class="list-unstyled text-small">
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none"
+                                            href="#">+92 0312 2881989</a></li>
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource
+                                            name</a></li>
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another
+                                            resource</a></li>
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final
+                                            resource</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success-emphasis">learn <span>Designing</span></strong>
-          <h3 class="mb-0">Rahi <span>coaching </span></h3>
-          <div class="mb-1 text-body-secondary">Nov 11</div>
-          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-            Continue reading
-            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-          </a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <img src="images/boot2.jpeg" alt="" class="bd-placeholder-img" width="200" height="250">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row mb-2">
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary-emphasis">learn <span>react.js</span></strong>
-          <h3 class="mb-0">Rahi <span>coading  section</span></h3>
-          <div class="mb-1 text-body-secondary">Nov 12</div>
-          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-            Continue reading
-            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-          </a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <img src="images/boot3.png" alt="" class="bd-placeholder-img" width="200" height="250">
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success-emphasis">learn <span>coading</span></strong>
-          <h3 class="mb-0">Rahi <span>coaching </span></h3>
-          <div class="mb-1 text-body-secondary">Nov 11</div>
-          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-            Continue reading
-            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-          </a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <img src="images/boot4.jpeg" alt="" class="bd-placeholder-img" width="200" height="250">
-        </div>
-      </div>
-    </div>
-  </div>
- </div>
- 
- <footer class="container">
-  <p class="float-end"><a href="#">Back to top</a></p>
-  <p>© 2020–2024 rahi coader, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-</footer>
-<script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
-  <script src="script.js"></script>
-</body>
+
+
+
+    <!-- footer section end -->
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+    </body>
 
 </html>
