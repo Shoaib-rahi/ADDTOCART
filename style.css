@@ -83,3 +83,117 @@ filter: drop-shadow(10px 10px 5px gray);
     transform: scale(80%);
     
 }
+.cart{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 450px;
+    background-color: #453b3e;
+    height: 100vh;
+    transition: .5s;
+    padding: 15px 30px;
+}
+.active .cart{
+    left: calc(100% - 400px);
+}
+.cart h3{
+    font-size: 1.5rem;
+    margin-top: 15px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+.cart .checkOut{
+    position:absolute;
+     bottom: 0px;
+     left: 0;
+     color: #453b3e;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.cart .checkOut div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    height: 60px;
+    cursor: pointer;
+    background-color: beige;
+}
+.cart .checkOut div:nth-child(2){
+    background-color: black;
+    color: white;
+    
+}
+.fa-star{
+    color: #ff9c1a;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+.product-list{
+    padding: 15px;
+    height: auto;
+}
+.product-list li{
+    display: grid;
+    grid-template-columns: 100px repeat(3,1fr);
+    color: white;
+    row-gap: 20px;
+    margin: 20px 20px;
+    padding: .4rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid;
+
+}
+.product-list li img{
+    width: 60px;
+    background-color: white;
+    border-radius: 50px;
+    height: 60px;
+
+}
+.product-list li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-list li  button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.count{
+    margin: 0px 10px;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.count1{
+    margin: 0px 10px;
+}
+@media screen and (max-width:998px){
+    .products{
+
+        display: flex;
+        flex-direction: column;
+    }
+    .products .item{
+        width: 250px;
+        margin-left: -50px;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+    }
+    .btn{
+        padding: .2rem .5rem;
+    }
+}
